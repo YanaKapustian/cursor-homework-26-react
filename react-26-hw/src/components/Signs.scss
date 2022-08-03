@@ -1,0 +1,143 @@
+$black: #121212;
+$pink: #f48fb2;
+$white: #fafafa;
+$blue: #90caf8;
+.container {
+    width: 500px;
+    margin: 80px auto;
+    position: relative;
+    .alert {
+        width: 100%;
+        background-color: #d4edda;
+        border-radius: 3px;
+        padding: 10px 20px;
+        position: absolute;
+        top: -60px;
+        animation: show .8s linear;
+    }
+    .hidden {
+        display: none;
+    }
+    .underline-text {
+        color: $black;
+    }
+    .title {
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        color: #fafafa;
+    }
+    .pink {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #f48fb2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .padlock {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 3px;
+    }
+    input {
+        width: 93%;
+        height: 50px;
+        padding: 0px 15px;
+        border-radius: 3px;
+        font-size: 18px;
+        font-weight: 300;
+        background-color: $black;
+        color: #c0c0c0;
+        border: 1px solid #535353;
+        margin: 15px 0;
+        outline: none;
+    }
+    .checkbox {
+        width: 17px;
+        height: 17px;
+        color: $black;
+        border: #535353 solid 2px;
+    }
+    .label {
+        font-size: 18px;
+        font-weight: 400;
+        color: #fafafa;
+        margin-left: 10px;
+    }
+    .btn {
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        background-color: $blue;
+        color: $black;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 12px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+    .sides {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .blue-text {
+        color: $blue;
+        font-size: 15px;
+        text-decoration: none;
+        margin-top: 15px;
+    }
+    .small-input:first-child {
+        margin-right: 20px;
+    }
+    .right {
+        text-align: right;
+    }
+    .copyright {
+        color: #535353;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .message {
+        font-size: 18px;
+        color: rgb(230, 101, 101);
+        margin-top: 5px;
+        margin-bottom: -13px;
+    }
+    .message-email {
+        font-size: 18px;
+        color: rgb(230, 101, 101);
+    }
+    .underline {
+        text-decoration: underline
+    }
+    .welcome {
+        color: $pink;
+        font-size: 40px;
+    }
+    .cat {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .sign-out {
+        color: #a8a8a8;
+        position: absolute;
+        top: -50px;
+        right: 40px;
+        font-size: 16px;
+        text-decoration: none; 
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
