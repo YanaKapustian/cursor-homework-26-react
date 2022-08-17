@@ -4,7 +4,7 @@ import './Signs.scss'
 import padlock from './padlock.png'
 
 const SignIn = () => {
-    let usersArray = JSON.parse(localStorage.getItem('users'))
+    let usersArray = JSON.parse(localStorage.getItem('users')) || []
     let navigate = useNavigate();
 
     function handleSignIn(e) {
